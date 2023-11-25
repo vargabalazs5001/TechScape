@@ -1,2 +1,0 @@
-# TechScape
-Mesterremek
