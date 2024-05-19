@@ -1,0 +1,105 @@
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #ff0000;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+    height: 800px;
+    overflow: auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+.products{
+    margin-top: 1.3rem;
+    display: inline-block;
+    height: 850px;
+    position: sticky;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.feedbacks  h2{
+    margin-bottom: 0.8rem;
+    position: sticky;
+}
+
+.feedbacks  table{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    /*box-shadow: var(--box-shadow);*/
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+.feedbacks table:hover{
+    box-shadow: none;
+}
+.feedbacks  thead th {
+    top: 0;
+    border-radius: 4px;
+}
+.feedbacks  tfoot td {
+    bottom: 0;
+    border-radius: 4px;
+}
+table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+    
+}
+
+table tbody tr:last-child td{
+    border: none;
+}
+.feedbacks  a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+.scroll{
+    overflow-y: scroll;
+    margin-top: 1.3rem;
+    display: inline-block;
+    height: 800px;
+    position: sticky;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 10px;
+}

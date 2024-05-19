@@ -1,0 +1,222 @@
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #ff0000;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+form {
+    margin-top: 20px;
+    grid-column: 2 / span 1;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+    padding: 8px 10px;
+    border: 2px solid var(--color-danger);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 2px;
+}
+
+button:hover {
+    border: 2px solid var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-dark-variant);
+}
+
+button a {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button a:hover {
+    background-color: var(--color-danger);
+    color: var(--color-dark-variant);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+    height: 400px;
+    overflow: auto;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+.products {
+    display: inline-block;
+    height: 700px;
+    position: sticky;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.products h2 {
+    margin-bottom: 0.8rem;
+    position: sticky;
+}
+
+.products table {
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    /*box-shadow: var(--box-shadow);*/
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+.products table:hover {
+    box-shadow: none;
+}
+
+.products thead th {
+    top: 0;
+    border-radius: 4px;
+}
+
+.products tfoot td {
+    bottom: 0;
+    border-radius: 4px;
+}
+
+table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+
+}
+
+table tbody tr:last-child td {
+    border: none;
+}
+
+.products a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+.scroll {
+    overflow-y: scroll;
+    margin-top: 1rem;
+    display: inline-block;
+    height: 600px;
+    position: sticky;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.users {
+    margin-top: 1.3rem;
+    display: inline-block;
+    height: 850px;
+    position: sticky;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.users h2 {
+    margin-bottom: 0.8rem;
+    position: sticky;
+}
+
+.users table {
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    /*box-shadow: var(--box-shadow);*/
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+.users table:hover {
+    box-shadow: none;
+}
+
+.users thead th {
+    top: 0;
+    border-radius: 4px;
+}
+
+.users tfoot td {
+    bottom: 0;
+    border-radius: 4px;
+}
+
+.user-grid-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+.user-grid-item > div {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark);
+    text-align: center;
+    font-size: 30px;
+  }
